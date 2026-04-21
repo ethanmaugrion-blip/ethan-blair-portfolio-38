@@ -58,7 +58,7 @@ const Article = () => {
                 "What if we could teach our hardware to change its mind as quickly as our software does?"
               </p>
               <footer className="mt-4 font-mono text-xs tracking-[0.2em] uppercase text-slate">
-                — Dr. B. S. Garrett, lead researcher
+                Dr. B. S. Garrett, lead researcher
               </footer>
             </blockquote>
 
@@ -98,7 +98,7 @@ const Article = () => {
                 researchers can change it from insulating to conducting a signal through the
                 antenna. By turning "on" or "off" specific bridges, the antenna's length effectively
                 changes. Since the length of an antenna dictates the frequency receives, this
-                allows the device to jump between different bands of the wireless spectrum —
+                allows the device to jump between different bands of the wireless spectrum,
                 shifting from 4G to 5G in a second.
               </p>
             </section>
