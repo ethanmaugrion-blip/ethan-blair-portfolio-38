@@ -109,9 +109,9 @@ const Home = () => {
           <div className="lg:col-span-7">
             <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-copper mb-4">Purpose</div>
             <p className="font-serif text-3xl lg:text-4xl leading-snug">
-              "I built this site to translate lab chemistry into engineering specification, and
-              to share my work with the teams building the next generation of aerospace and
-              telecom hardware."
+              This site translates lab chemistry into engineering specification, and shares my
+              work with the teams building the next generation of aerospace and telecom
+              hardware.
             </p>
             <p className="mt-6 font-mono text-xs tracking-[0.2em] uppercase text-slate-light">Ethan Blair, CU Boulder '27</p>
           </div>
