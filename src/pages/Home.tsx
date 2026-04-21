@@ -24,10 +24,9 @@ const Home = () => {
                 Frontier.
               </h1>
               <p className="mt-8 max-w-xl text-lg text-slate-light leading-relaxed">
-                Recent research has shown that shifting radio frequency components away from
-                standard copper and toward polymers and graphene films can result in more
-                desirable attributes such as dynamic tuning, weight reduction, and thermal
-                protection. This site is where I track that shift.
+                Shifting RF components from copper toward polymers and graphene films unlocks
+                dynamic tuning, lighter weight, and better thermal protection. This site tracks
+                that shift.
               </p>
               <div className="mt-10 flex flex-wrap gap-4">
                 <Link to="/synthesis" className="group inline-flex items-center gap-3 bg-copper text-primary-foreground px-6 py-3 font-mono text-xs tracking-[0.2em] uppercase hover:bg-copper/90 transition">
@@ -69,17 +68,15 @@ const Home = () => {
             </div>
             <div className="lg:col-span-8 lg:pl-8 lg:border-l border-steel">
               <p className="text-xl text-navy leading-relaxed mb-6">
-                For about a century, antennas have been made of copper and gold. These are
-                high-conductivity metals that are great at one job, but they cannot adapt. As 5G
-                evolves into 6G, every device has to negotiate a denser, more crowded spectrum,
-                and rigid hardware has started to run into a wall.
+                For about a century, antennas have been made of copper and gold. They are great
+                at one job, but they cannot adapt. As 5G evolves into 6G, rigid hardware has
+                started to run into a wall.
               </p>
               <p className="text-lg text-slate leading-relaxed">
-                This portfolio is my attempt to bridge peer-reviewed research with industrial
-                application. It looks at conducting polymers that act as electrochemical switches,
-                lightweight 3D-printed K-band horns, and graphene assembled films that help with
-                thermal dissipation. Working in conjunction, these studies show that hardware is
-                starting to become as flexible as the software it houses.
+                This portfolio bridges peer-reviewed research with industrial application:
+                conducting polymers as electrochemical switches, 3D-printed K-band horns, and
+                graphene films for thermal dissipation. Together, they show hardware becoming as
+                flexible as the software it houses.
               </p>
             </div>
           </div>
@@ -87,9 +84,9 @@ const Home = () => {
           {/* Three pillars */}
           <div className="mt-20 grid md:grid-cols-3 gap-px bg-steel border border-steel">
             {[
-              { icon: Atom, t: "Reconfigurable Polymers", d: "Conducting polymers like polyaniline can switch frequency states through redox chemistry, with no mechanical parts involved." },
-              { icon: Layers, t: "Graphene Assembled Films", d: "Thermal conductivity that outperforms copper, plus built-in EMI shielding to protect sensitive RF components from outside noise." },
-              { icon: Zap, t: "Industrial Implication", d: "Lighter aerospace payloads, fewer redundant antennas inside every phone, and adaptive hardware that can keep up with a global spectrum." },
+              { icon: Atom, t: "Reconfigurable Polymers", d: "Polyaniline switches frequency states through redox chemistry. No mechanical parts." },
+              { icon: Layers, t: "Graphene Assembled Films", d: "Beats copper on thermal conductivity and shields sensitive RF stages from outside noise." },
+              { icon: Zap, t: "Industrial Implication", d: "Lighter aerospace payloads, fewer antennas per phone, and hardware that adapts to a global spectrum." },
             ].map(({ icon: Icon, t, d }) => (
               <div key={t} className="bg-bone p-8 lg:p-10 group hover:bg-background transition-colors">
                 <div className="flex items-center justify-between mb-6">
@@ -112,9 +109,9 @@ const Home = () => {
           <div className="lg:col-span-7">
             <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-copper mb-4">Purpose</div>
             <p className="font-serif text-3xl lg:text-4xl leading-snug">
-              "I built this site to translate laboratory chemistry into engineering specification,
-              and to share my work with the teams that are building the next generation of
-              aerospace and telecommunications hardware."
+              "I built this site to translate lab chemistry into engineering specification, and
+              to share my work with the teams building the next generation of aerospace and
+              telecom hardware."
             </p>
             <p className="mt-6 font-mono text-xs tracking-[0.2em] uppercase text-slate-light">Ethan Blair, CU Boulder '27</p>
           </div>
