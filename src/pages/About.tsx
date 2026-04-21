@@ -16,8 +16,9 @@ const About = () => {
           </div>
           <div className="lg:col-span-5 lg:pl-8 lg:border-l border-steel">
             <p className="text-lg text-slate leading-relaxed">
-              Engineers don't get into materials science by accident. For me it began with a piece
-              of analog hardware older than my parents — and a question about why it still worked.
+              I don't think engineers usually get into materials science by accident. For me, it
+              started with a piece of analog hardware that was older than my parents, and a
+              question about why it still worked.
             </p>
           </div>
         </div>
@@ -31,19 +32,20 @@ const About = () => {
             <h2 className="font-serif text-4xl lg:text-5xl text-navy mb-6">My grandfather's radio.</h2>
             <div className="space-y-5 text-lg text-slate leading-relaxed">
               <p>
-                Some kids inherit a watch. I inherited a tube radio — heavy, walnut-cased, and
-                loud enough to fill a Colorado garage on a Sunday morning. My grandfather kept it
-                tuned to AM 850, even after the rest of the house had switched to streaming.
+                Some kids inherit a watch. I inherited a tube radio. It was heavy, walnut-cased,
+                and loud enough to fill a Colorado garage on a Sunday morning. My grandfather kept
+                it tuned to AM 850, even after the rest of the house had switched to streaming.
               </p>
               <p>
                 When it finally went silent, he handed it to me. We took the back off together.
-                Inside was a forest of copper coils, vacuum tubes, and a single hand-wound antenna
-                — engineered in 1962 to do exactly one thing, exactly one way.
+                Inside was a forest of copper coils, vacuum tubes, and a single hand-wound
+                antenna, engineered in 1962 to do exactly one thing, exactly one way.
               </p>
               <p>
-                I remember asking why it couldn't simply <em>change</em>. Why an antenna had to be
-                fixed, when everything else in the world seemed to negotiate. He shrugged. I never
-                stopped thinking about it. The research I do now is, in some sense, an answer.
+                I remember asking him why it couldn't simply <em>change</em>. Why an antenna had
+                to be fixed, when everything else in the world seemed to negotiate. He shrugged.
+                I never really stopped thinking about it, and the research I do now is, in some
+                sense, my attempt at an answer.
               </p>
             </div>
           </div>
@@ -101,21 +103,21 @@ const About = () => {
             {[
               {
                 role: "Technical Lead",
-                org: "ChemE Car Team — CU Boulder",
-                date: "2025 — Present",
-                body: "Lead the chemistry subsystem for our AIChE competition vehicle, designing the redox-clock stop reaction and braking control. Coordinate a team of seven across propulsion, control, and safety reviews.",
+                org: "ChemE Car Team, CU Boulder",
+                date: "2025 / Present",
+                body: "I lead the chemistry subsystem for our AIChE competition vehicle, where I design the redox-clock stop reaction and the braking control. I also coordinate a team of seven across propulsion, control, and safety reviews.",
               },
               {
                 role: "Teaching Lab Assistant",
                 org: "Chevron Teaching Laboratory",
-                date: "2024 — Present",
-                body: "Mentor undergraduate cohorts through the construction and operation of Continuous Stirred Tank Reactors (CSTRs). Calibrate flow controllers, validate residence-time distributions, and grade conversion analyses.",
+                date: "2024 / Present",
+                body: "I help underclassmen build and operate Continuous Stirred Tank Reactors (CSTRs). My day to day involves calibrating flow controllers, validating residence-time distributions, and grading conversion analyses.",
               },
               {
                 role: "Undergraduate Researcher",
                 org: "Materials & RF Hardware Group",
-                date: "2025 — Present",
-                body: "Investigate the trade space between conducting polymers, 3D-printed lightweight antennas, and graphene assembled films for next-generation reconfigurable RF hardware.",
+                date: "2025 / Present",
+                body: "I investigate the trade space between conducting polymers, 3D-printed lightweight antennas, and graphene assembled films for the next generation of reconfigurable RF hardware.",
               },
             ].map((e) => (
               <div key={e.role} className="grid grid-cols-12 gap-4 py-6 border-t border-steel last:border-b">
@@ -136,7 +138,7 @@ const About = () => {
         <div className="max-w-[1100px] mx-auto px-6 lg:px-12 text-center">
           <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-copper mb-6">Trajectory</div>
           <p className="font-serif text-3xl lg:text-4xl leading-snug">
-            "I want to spend the next decade where chemistry meets flight — designing the materials
+            "I want to spend the next decade where chemistry meets flight, designing the materials
             that survive launch, the hardware that adapts in orbit, and the systems that turn lab
             curiosities into aerospace standards."
           </p>
