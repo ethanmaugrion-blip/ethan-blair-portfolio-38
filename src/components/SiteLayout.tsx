@@ -3,11 +3,12 @@ import { Linkedin, Mail, ArrowUpRight } from "lucide-react";
 import { useEffect } from "react";
 import { cn } from "@/lib/utils";
 
-const nav = [
+type NavItem = { to: string; label: string; num: string; external?: boolean };
+const nav: NavItem[] = [
   { to: "/", label: "Index", num: "01" },
   { to: "/about", label: "About", num: "02" },
-  { to: "/synthesis", label: "Synthesis", num: "03" },
-  { to: "/article", label: "Article", num: "04" },
+  { to: "/synthesis.pdf", label: "Synthesis", num: "03", external: true },
+  { to: "/article.pdf", label: "Article", num: "04", external: true },
 ];
 
 export const SiteLayout = () => {
@@ -28,8 +29,21 @@ export const SiteLayout = () => {
             </div>
           </Link>
           <nav className="flex items-center gap-1 sm:gap-2">
-            {nav.map((n) => (
-              <NavLink
+            {nav.map((n) =>
+              n.external ? (
+                <a
+                  key={n.to}
+                  href={n.to}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group relative px-2 sm:px-3 py-2 font-mono text-[11px] tracking-[0.18em] uppercase text-slate hover:text-navy transition-colors"
+                >
+                  <span className="hidden md:inline mr-1.5 text-slate-light">{n.num}</span>
+                  {n.label}
+                  <span className="absolute left-2 right-2 -bottom-px h-px bg-copper transition-transform origin-left scale-x-0 group-hover:scale-x-100" />
+                </a>
+              ) : (
+                <NavLink
                 key={n.to}
                 to={n.to}
                 end={n.to === "/"}
@@ -52,8 +66,9 @@ export const SiteLayout = () => {
                     />
                   </>
                 )}
-              </NavLink>
-            ))}
+                </NavLink>
+              ),
+            )}
           </nav>
         </div>
       </header>
@@ -89,9 +104,15 @@ export const SiteLayout = () => {
             <ul className="space-y-2">
               {nav.map((n) => (
                 <li key={n.to}>
-                  <Link to={n.to} className="font-mono text-xs tracking-wider uppercase hover:text-copper transition-colors">
-                    <span className="text-slate-light mr-2">{n.num}</span>{n.label}
-                  </Link>
+                  {n.external ? (
+                    <a href={n.to} target="_blank" rel="noreferrer" className="font-mono text-xs tracking-wider uppercase hover:text-copper transition-colors">
+                      <span className="text-slate-light mr-2">{n.num}</span>{n.label}
+                    </a>
+                  ) : (
+                    <Link to={n.to} className="font-mono text-xs tracking-wider uppercase hover:text-copper transition-colors">
+                      <span className="text-slate-light mr-2">{n.num}</span>{n.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

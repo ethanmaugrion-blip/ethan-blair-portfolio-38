@@ -1,4 +1,4 @@
-import labImg from "@/assets/about-lab.jpg";
+import labImg from "@/assets/about-ethan.jpg";
 import { GraduationCap, Beaker, Rocket, Briefcase } from "lucide-react";
 
 const About = () => {
