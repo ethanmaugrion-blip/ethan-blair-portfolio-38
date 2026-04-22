@@ -28,7 +28,7 @@ const Home = () => {
                 that shift.
               </p>
               <div className="mt-10 flex flex-wrap gap-4">
-                <a href="/synthesis.pdf" target="_blank" rel="noreferrer" className="group inline-flex items-center gap-3 bg-copper text-primary-foreground px-6 py-3 font-mono text-xs tracking-[0.2em] uppercase hover:bg-copper/90 transition">
+                <a href="/synthesis" className="group inline-flex items-center gap-3 bg-copper text-primary-foreground px-6 py-3 font-mono text-xs tracking-[0.2em] uppercase hover:bg-copper/90 transition">
                   Read Synthesis <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </a>
                 <a href="/about" className="group inline-flex items-center gap-3 border border-white/20 text-primary-foreground px-6 py-3 font-mono text-xs tracking-[0.2em] uppercase hover:bg-white/5 transition">
@@ -115,7 +115,7 @@ const Home = () => {
             <p className="mt-6 font-mono text-xs tracking-[0.2em] uppercase text-slate-light">Ethan Blair, CU Boulder '27</p>
           </div>
           <div className="lg:col-span-5 lg:pl-10 lg:border-l border-white/10">
-            <a href="/article.pdf" target="_blank" rel="noreferrer" className="group block">
+            <a href="/article" className="group block">
               <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-copper mb-3">Featured Article</div>
               <h3 className="font-serif text-3xl mb-4 group-hover:text-copper transition-colors">
                 Plastic Power: The Shape-Shifting Future of Connectivity

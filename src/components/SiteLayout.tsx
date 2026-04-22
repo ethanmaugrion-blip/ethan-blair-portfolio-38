@@ -7,8 +7,8 @@ type NavItem = { to: string; label: string; num: string; external?: boolean };
 const nav: NavItem[] = [
   { to: "/", label: "Index", num: "01" },
   { to: "/about", label: "About", num: "02" },
-  { to: "/synthesis.pdf", label: "Synthesis", num: "03", external: true },
-  { to: "/article.pdf", label: "Article", num: "04", external: true },
+  { to: "/synthesis", label: "Synthesis", num: "03" },
+  { to: "/article", label: "Article", num: "04" },
 ];
 
 export const SiteLayout = () => {
