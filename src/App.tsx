@@ -16,13 +16,15 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* The basename ensures all navigation stays within your repo folder */}
+      <BrowserRouter basename="/ethan-blair-portfolio-38">
         <Routes>
           <Route element={<SiteLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/synthesis" element={<PdfView src="/synthesis.pdf" title="Research Synthesis" eyebrow="03 — Synthesis" />} />
-            <Route path="/article" element={<PdfView src="/article.pdf" title="Plastic Power: Pop-Sci Article" eyebrow="04 — Article" />} />
+            {/* Added the dot (.) before the PDF paths below */}
+            <Route path="/synthesis" element={<PdfView src="./synthesis.pdf" title="Research Synthesis" eyebrow="03 — Synthesis" />} />
+            <Route path="/article" element={<PdfView src="./article.pdf" title="Plastic Power: Pop-Sci Article" eyebrow="04 — Article" />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
