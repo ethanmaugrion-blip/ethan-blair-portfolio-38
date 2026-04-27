@@ -31,16 +31,16 @@ const Home = () => {
         </p>
         <div className="mt-10 flex flex-wrap gap-4">
           <a
-            href="/synthesis"
+            href="./synthesis"
             className="group inline-flex items-center gap-3 bg-copper text-primary-foreground px-6 py-3 font-mono text-xs tracking-[0.2em] uppercase hover:bg-copper/90 transition"
           >
             Read Synthesis <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
           <a
-            href="/about"
+            href="./about"
             className="group inline-flex items-center gap-3 border border-white/20 px-6 py-3 font-mono text-xs tracking-[0.2em] uppercase hover:bg-white/5 transition"
           >
-            About Ethan
+            About My Research Journey
           </a>
         </div>
       </div>
